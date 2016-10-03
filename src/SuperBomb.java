@@ -1,6 +1,5 @@
 import java.awt.Color;
 import java.awt.Graphics2D;
-import java.awt.Rectangle;
 import java.awt.geom.Ellipse2D;
 
 public class SuperBomb extends SuperBlobClass

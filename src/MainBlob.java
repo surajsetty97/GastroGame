@@ -38,6 +38,14 @@ public class MainBlob extends JPanel implements ActionListener, KeyListener, Mou
     ArrayList<Integer> velocityListY = new ArrayList<>();
     ArrayList<SuperBlobClass> blobList = new ArrayList<>();
 
+    public MainBlob()
+    {
+        addMouseListener(this);
+        addKeyListener(this);//this refers to KeyListerner Internface up top
+        setFocusable(true);//implements Key Listner
+        setFocusTraversalKeysEnabled(false); //won't be using shift and tab keys
+    }
+
     public void paintComponent(Graphics g)
     {
         super.paintComponent(g);
@@ -400,7 +408,7 @@ public class MainBlob extends JPanel implements ActionListener, KeyListener, Mou
         }
     }
 
-    public void keyTyped(KeyEvent e){} //Random methods that need to be written to satisfy interfaces
+    public void keyTyped(KeyEvent e){} //Randomw methods that need to be written to satisfy interfaces
 
     public void mouseEntered(MouseEvent e){}
 
